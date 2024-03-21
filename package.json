@@ -17,7 +17,7 @@
   "dependencies": {
     "@nestjs/common": "^10.0.0",
     "@nestjs/core": "^10.0.0",
-    "cache-redis": "gitlab:official-primaku/backend/package/cache-redis",
+    "cache-redis": "git+ssh://git@gitlab.com:official-primaku/backend/package/cache-redis.git",
     "redis": "^4.6.13",
     "reflect-metadata": "^0.2.0",
     "rxjs": "^7.8.1"
