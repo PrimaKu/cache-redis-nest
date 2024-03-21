@@ -1,31 +1,42 @@
 import { Test, TestingModule } from '@nestjs/testing';
 import { CacheService } from './cache.service';
+import { REDIS_OPTIONS } from './cache.constant';
+import { RedisClientOptions } from 'redis';
+import { CacheKeys } from 'cache-redis';
 
 describe('CacheService', () => {
   let service: CacheService;
 
-  beforeEach(async () => {
+  beforeAll(async () => {
     const module: TestingModule = await Test.createTestingModule({
-      providers: [CacheService],
+      providers: [
+        {
+          provide: REDIS_OPTIONS,
+          useValue: {
+            database: 3,
+          } as RedisClientOptions,
+        },
+        CacheService,
+      ],
     }).compile();
 
     service = module.get<CacheService>(CacheService);
   });
-
+  
   it('should be defined', () => {
     expect(service).toBeDefined();
   });
-
+  
   it('should missed', async () => {
-    await service.delete('article_list');
-    const articleList = await service.get('article_list');
+    await service.delete(CacheKeys.RECOMMENDED_ARTICLE_LIST);
+    const articleList = await service.get(CacheKeys.RECOMMENDED_ARTICLE_LIST);
 
     expect(articleList).toEqual(null);
   });
 
   it('should cached', async () => {
-    await service.set('article_list', { articles: [] });
-    const articleList = await service.get('article_list');
+    await service.set(CacheKeys.RECOMMENDED_ARTICLE_LIST, { articles: [] });
+    const articleList = await service.get(CacheKeys.RECOMMENDED_ARTICLE_LIST);
 
     expect(articleList).not.toEqual(null);
   });
