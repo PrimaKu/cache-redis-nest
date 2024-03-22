@@ -1,10 +1,11 @@
 {
   "name": "cache-redis-nest",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "NestJs cache library using redis",
   "author": "haris@primaku.com",
   "private": true,
   "license": "MIT",
+  "main": "./packages/cache/index.js",
   "scripts": {
     "build": "rimraf packages && tsc -p libs/cache/tsconfig.lib.json",
     "format": "prettier --write \"libs/**/*.ts\"",
