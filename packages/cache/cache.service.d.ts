@@ -1,5 +1,4 @@
-import { CacheKeys } from 'cache-redis';
-import { RedisClientOptions } from 'redis';
+import { CacheKeys, RedisClientOptions } from 'cache-redis';
 export declare class CacheService {
     private cache;
     constructor(redisOptions: RedisClientOptions);
