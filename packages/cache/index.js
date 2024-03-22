@@ -14,6 +14,9 @@ var __exportStar = (this && this.__exportStar) || function(m, exports) {
     for (var p in m) if (p !== "default" && !Object.prototype.hasOwnProperty.call(exports, p)) __createBinding(exports, m, p);
 };
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.CacheKeys = void 0;
 __exportStar(require("./cache.module"), exports);
 __exportStar(require("./cache.service"), exports);
+var cache_redis_1 = require("cache-redis");
+Object.defineProperty(exports, "CacheKeys", { enumerable: true, get: function () { return cache_redis_1.CacheKeys; } });
 //# sourceMappingURL=index.js.map
