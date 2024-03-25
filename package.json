@@ -3,7 +3,6 @@
   "version": "0.1.0",
   "description": "NestJs cache library using redis",
   "author": "haris@primaku.com",
-  "private": true,
   "license": "MIT",
   "main": "./packages/cache/index.js",
   "scripts": {
