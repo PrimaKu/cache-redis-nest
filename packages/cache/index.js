@@ -17,6 +17,6 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.CacheKeys = void 0;
 __exportStar(require("./cache.module"), exports);
 __exportStar(require("./cache.service"), exports);
-var cache_redis_1 = require("cache-redis");
-Object.defineProperty(exports, "CacheKeys", { enumerable: true, get: function () { return cache_redis_1.CacheKeys; } });
+var cache_redis_node_1 = require("cache-redis-node");
+Object.defineProperty(exports, "CacheKeys", { enumerable: true, get: function () { return cache_redis_node_1.CacheKeys; } });
 //# sourceMappingURL=index.js.map

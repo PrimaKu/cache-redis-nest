@@ -11,9 +11,9 @@ dependencies:
   '@nestjs/core':
     specifier: ^10.0.0
     version: 10.3.4(@nestjs/common@10.3.4)(reflect-metadata@0.2.1)(rxjs@7.8.1)
-  cache-redis:
-    specifier: gitlab:official-primaku/backend/package/cache-redis
-    version: git@gitlab.com+official-primaku/backend/package/cache-redis/ce373b0b496ac5d5f8f19606f04789d8ded5474e
+  cache-redis-node:
+    specifier: ^0.1.0
+    version: 0.1.0
   reflect-metadata:
     specifier: ^0.2.0
     version: 0.2.1
@@ -1858,6 +1858,13 @@ packages:
       base64-js: 1.5.1
       ieee754: 1.2.1
     dev: true
+
+  /cache-redis-node@0.1.0:
+    resolution: {integrity: sha512-pY+0NU5iSTznQdGa19qHJu2uiI2jyZN72f50GYN/lCSBB+yIgAjphwhspzPnrF9MzBDpWNbfyQflAjGkxI11/Q==}
+    dependencies:
+      prom-client: 15.1.0
+      redis: 4.6.13
+    dev: false
 
   /call-bind@1.0.7:
     resolution: {integrity: sha512-GHTSNSYICQ7scH7sZ+M2rFopRoLh8t2bLSW6BbgrtLsahOIB5iyAVJf9GjWK3cYTDaMj4XdBpM1cA6pIS0Kv2w==}
@@ -4972,12 +4979,3 @@ packages:
     resolution: {integrity: sha512-rVksvsnNCdJ/ohGc6xgPwyN8eheCxsiLM8mxuE/t/mOVqJewPuO1miLpTHQiRgTKCLexL4MeAFVagts7HmNZ2Q==}
     engines: {node: '>=10'}
     dev: true
-
-  git@gitlab.com+official-primaku/backend/package/cache-redis/ce373b0b496ac5d5f8f19606f04789d8ded5474e:
-    resolution: {commit: ce373b0b496ac5d5f8f19606f04789d8ded5474e, repo: git@gitlab.com:official-primaku/backend/package/cache-redis.git, type: git}
-    name: cache-redis
-    version: 0.1.0
-    dependencies:
-      prom-client: 15.1.0
-      redis: 4.6.13
-    dev: false

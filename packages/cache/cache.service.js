@@ -14,11 +14,11 @@ var __param = (this && this.__param) || function (paramIndex, decorator) {
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.CacheService = void 0;
 const common_1 = require("@nestjs/common");
-const cache_redis_1 = require("cache-redis");
+const cache_redis_node_1 = require("cache-redis-node");
 const cache_constant_1 = require("./cache.constant");
 let CacheService = class CacheService {
     constructor(redisOptions) {
-        this.cache = new cache_redis_1.Cache(redisOptions);
+        this.cache = new cache_redis_node_1.Cache(redisOptions);
     }
     set(key, data) {
         return this.cache.set(key, data);

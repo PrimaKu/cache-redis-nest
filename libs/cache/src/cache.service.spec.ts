@@ -1,8 +1,7 @@
 import { Test, TestingModule } from '@nestjs/testing';
 import { CacheService } from './cache.service';
 import { REDIS_OPTIONS } from './cache.constant';
-import { RedisClientOptions } from 'redis';
-import { CacheKeys } from 'cache-redis';
+import { CacheKeys, RedisClientOptions } from 'cache-redis-node';
 
 describe('CacheService', () => {
   let service: CacheService;
