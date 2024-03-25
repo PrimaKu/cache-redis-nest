@@ -12,8 +12,8 @@ dependencies:
     specifier: ^10.0.0
     version: 10.3.4(@nestjs/common@10.3.4)(reflect-metadata@0.2.1)(rxjs@7.8.1)
   cache-redis:
-    specifier: git+ssh://git@gitlab.com:official-primaku/backend/package/cache-redis.git
-    version: git@gitlab.com+official-primaku/backend/package/cache-redis/ef19e25617e9349208fb3a1c8766fa89106f5035
+    specifier: gitlab:official-primaku/backend/package/cache-redis
+    version: git@gitlab.com+official-primaku/backend/package/cache-redis/ce373b0b496ac5d5f8f19606f04789d8ded5474e
   reflect-metadata:
     specifier: ^0.2.0
     version: 0.2.1
@@ -4973,8 +4973,8 @@ packages:
     engines: {node: '>=10'}
     dev: true
 
-  git@gitlab.com+official-primaku/backend/package/cache-redis/ef19e25617e9349208fb3a1c8766fa89106f5035:
-    resolution: {commit: ef19e25617e9349208fb3a1c8766fa89106f5035, repo: git@gitlab.com:official-primaku/backend/package/cache-redis.git, type: git}
+  git@gitlab.com+official-primaku/backend/package/cache-redis/ce373b0b496ac5d5f8f19606f04789d8ded5474e:
+    resolution: {commit: ce373b0b496ac5d5f8f19606f04789d8ded5474e, repo: git@gitlab.com:official-primaku/backend/package/cache-redis.git, type: git}
     name: cache-redis
     version: 0.1.0
     dependencies:
