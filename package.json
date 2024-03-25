@@ -1,6 +1,6 @@
 {
   "name": "cache-redis-nest",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "NestJs cache library using redis",
   "author": "haris@primaku.com",
   "license": "MIT",
