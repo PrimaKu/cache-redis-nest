@@ -12,7 +12,7 @@ const common_1 = require("@nestjs/common");
 const cache_service_1 = require("./cache.service");
 const cache_constant_1 = require("./cache.constant");
 let CacheModule = CacheModule_1 = class CacheModule {
-    static register(options) {
+    static forRoot(options) {
         return {
             global: true,
             module: CacheModule_1,
