@@ -7,6 +7,7 @@ import { RedisClientOptions } from 'cache-redis-node';
 export class CacheModule {
   static register(options: RedisClientOptions): DynamicModule {
     return {
+      global: true,
       module: CacheModule,
       providers: [
         {

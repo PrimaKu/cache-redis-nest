@@ -14,6 +14,7 @@ const cache_constant_1 = require("./cache.constant");
 let CacheModule = CacheModule_1 = class CacheModule {
     static register(options) {
         return {
+            global: true,
             module: CacheModule_1,
             providers: [
                 {
